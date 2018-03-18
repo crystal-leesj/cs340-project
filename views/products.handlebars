@@ -1,0 +1,36 @@
+<h1>TEST BEAUTY PRODUCTS:</h1>
+<h1>Handlebars JS Example</h1>
+{{#each foo}}
+{{this}}
+{{/each}}
+
+<h1>Beauty Bucket List</h1>
+<p>These featured items are "Good" beauty products contains no hazard ingredients.</p>
+<p>Viewers can veiw the items and can give feedback on them.</p>
+<p>Click name of the product to see reviews and where to buy.</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Ingredients</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}} 
+        <tr>
+            <td>{{brand}}</td>
+            <td>{{name}}</td>
+            <td>{{category}}</td>
+            <td>{{description}}</td>
+            <td>{{ingredient}}</td>
+            <td><button type="button" class="btn btn-info">Info</button></td>
+            <td><button type="button" class="btn btn-danger">Danger</button></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
